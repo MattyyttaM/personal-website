@@ -1,0 +1,33 @@
+/* Breakpoints */
+$mobile-xs: 321px;
+$mobile: 551px;
+$tablet: 801px;
+$desktop: 1281px;
+$desktop-xl: 1921px;
+
+/* Mixins */
+@mixin mobile-xs {
+    @media (min-width: $xs-min) {
+        @content;
+    }
+}
+@mixin mobile {
+    @media (min-width: $sm-min) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media (min-width: $md-min) {
+        @content;
+    }
+}
+@mixin desktop {
+    @media (min-width: $lg-min) {
+        @content;
+    }
+}
+@mixin desktop-xl {
+    @media (min-width: $xl-min) {
+        @content;
+    }
+}
